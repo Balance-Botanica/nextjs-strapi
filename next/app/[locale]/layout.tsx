@@ -46,6 +46,9 @@ export default async function LocaleLayout({
 }) {
 
     const pageData = await fetchContentType('global', { filters: { locale } }, true);
+
+    console.log("pageData");
+    console.log(pageData);
     return (
         <html lang={locale}>
             <ViewTransitions>
