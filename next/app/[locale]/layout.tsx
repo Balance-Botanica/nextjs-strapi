@@ -1,7 +1,7 @@
 import React from 'react'
 
 import { Metadata } from 'next';
-import { Inter } from 'next/font/google';
+import { Inter, Poppins } from 'next/font/google';
 import { generateMetadataObject } from '@/lib/shared/metadata';
 
 import { Footer } from '@/components/footer';
@@ -15,6 +15,13 @@ const inter = Inter({
     subsets: ["latin"],
     display: "swap",
     weight: ["400", "500", "600", "700", "800", "900"],
+});
+
+const poppins = Poppins({
+    subsets: ["latin"],
+    display: "swap",
+    weight: ["400", "500", "600", "700"],
+    variable: "--font-poppins",
 });
 
 // Default Global SEO for pages without them
@@ -56,6 +63,7 @@ export default async function LocaleLayout({
                     <body
                         className={cn(
                             inter.className,
+                            poppins.variable,
                             "bg-charcoal antialiased h-full w-full"
                         )}
                     >

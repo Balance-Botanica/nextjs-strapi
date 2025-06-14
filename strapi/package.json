@@ -20,8 +20,6 @@
   },
   "dependencies": {
     "@strapi/plugin-cloud": "5.12.4",
-    "@strapi/plugin-graphql": "^5.12.7",
-    "@strapi/plugin-sentry": "^5.12.7",
     "@strapi/plugin-seo": "^2.0.4",
     "@strapi/plugin-users-permissions": "5.12.4",
     "@strapi/strapi": "5.12.4",
@@ -31,7 +29,6 @@
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-router-dom": "^6.0.0",
-    "strapi-plugin-comments": "^3.0.10",
     "styled-components": "^6.0.0",
     "uuid": "^10.0.0"
   },
@@ -39,7 +36,7 @@
     "name": "A Strapi developer"
   },
   "strapi": {
-    "uuid": "LAUNCHPAD-LOCAL-6e8412c8-1d59-4827-8655-f5591b5d5e1f"
+    "uuid": "LAUNCHPAD"
   },
   "engines": {
     "node": ">=18.0.0 <=22.x.x",
